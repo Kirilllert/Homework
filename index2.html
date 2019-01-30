@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<button id="button1" class="button">BUTTON1</button>
+	<button id="button2" class="button">BUTTON2</button>
+	<button id="button3" class="button">BUTTON3</button>
+	<button id="button4" class="button">BUTTON4</button>
+	<button id="button5" class="button">BUTTON5</button>
+	<script type="text/javascript">
+		let buttons=document.getElementsByTagName('button');
+		
+		for (var i = 0; i < buttons.length; i++) {
+		
+			console.log(buttons[i]);
+			buttons[i].addEventListener('click',()=>{
+				console.log('click');
+			})
+
+			}
+		
+
+
+	</script>
+
+</body>
+</html>
