@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<style type="text/css">
+	body{text-align: center;}
+		.undername{
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 25px;
+		}
+		#about{
+			font-family: 'Ubuntu', sans-serif;
+			font-size: 20px;
+			display: inline-block;
+		}
+		.button{
+			background-color: #D3D3D3;
+			padding: 10px;
+			border-radius: 5px;
+			display: inline-block;
+			cursor: pointer;
+		}
+		.name{
+			display: inline-block;
+		}
+		.about1{
+			font-family: 'Open Sans Condensed', sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="undername">
+			Супер адская анкета!
+		</div>
+		<div class="button" id="button">Нажми на кнопку!</div>
+		<br>
+			<div id="about">
+				Имя:
+				<div class="about1" id="name">
+					
+				</div>
+			</div>
+			<br>
+			<div id="about">
+				Фамилия:
+				<div class="about1" id="sorname">
+					
+				</div>
+			</div>
+			<br>
+			<div id="about">
+				Возраст:
+				<div class="about1" id="age">
+					
+				</div>
+			</div>
+			<br>
+			<div id="about">
+				Город:
+				<div class="about1" id="city">
+					
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript">
+			let btn=document.getElementById('button');
+			let name=document.getElementById('name');
+			let sorname=document.getElementById('sorname');
+			let city=document.getElementById('city');
+
+			button.onclick = function(){
+				let answe1=prompt('Как тебя зовут?','Иван');
+				name.textContent =answe1;
+
+				let answe2=prompt('Какая у тебя Фамилия?','Иванов');
+				sorname.textContent = answe2;
+				let answe3=prompt('Сколько тебе лет?');
+				if (answe3<=7) {
+					age.textContent ='Дошкольник',answe3;
+				}
+				else if(answe3<=18) {
+					age.textContent ='Школьник';
+				}
+				else if (answe3<=24) {
+					age.textContent ='Cтудент';
+				}
+				else if (answe3<=65) {
+					age.textContent ='Работает';
+				}
+				let answe4=prompt('Откуда ты?')
+				
+			}
+		</script>
+
+</body>
+</html>
